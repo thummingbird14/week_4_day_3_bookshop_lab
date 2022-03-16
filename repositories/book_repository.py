@@ -25,6 +25,6 @@ def select_all():
 
     for row in results:
         author = author_repository.select(row['author_id'])
-        book = Book(row['title'], author, row['year_of_publication'], row['publisher'], row['id'] )
+        book = Book(row['title'], row['year_of_publication'], author, row['publisher'], row['id'] )
         books.append(book)
     return books

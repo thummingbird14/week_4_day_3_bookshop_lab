@@ -23,8 +23,8 @@ book_repository.save(book2)
 for book in book_repository.select_all():
     print(book.__dict__)
 
-for author in author_repository.select_all():
-    print(author.__dict__)
+# for author in author_repository.select_all():
+    # print(author.__dict__)
 
 
 
