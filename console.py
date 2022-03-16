@@ -20,6 +20,8 @@ book_repository.save(book1)
 book2 = Book("1984", 1948, author2, "Viking")
 book_repository.save(book2)
 
+book_repository.delete(book2.id)
+
 for book in book_repository.select_all():
     print(book.__dict__)
 
